@@ -22,10 +22,11 @@ main{
 #title{
     font-size:1em;
     color:white;
-    border:2px solid red;
     display:grid;
     grid-template-columns:[line1] 15% [line2] 17.5% [line3] 17.5% [line4] 17.5% [line5] 17.5% [line6] 15% [line7];
     grid-template-rows:[row1] 5% [row2] 5% [row3];
+    padding-top:10px;
+    margin-bottom:5%;
 }
 
 #title h1{
@@ -39,7 +40,6 @@ main{
     grid-row-start:row1;
     grid-row-end:row2;
     background-color:#EC7171;
-    border:2px solid green;
 }
 
 #colorBox2{
@@ -48,7 +48,6 @@ main{
     grid-row-start:row2;
     grid-row-end:row3;
     background-color:#EC7171;
-    border:2px solid green;
 }
 
 #titleBox1{
@@ -66,7 +65,7 @@ main{
 }
 
 #form{
-    margin:10px 5%;
+    margin: 10% 5%;
     text-align:center;
 }
 
@@ -80,6 +79,7 @@ label{
     width:60%;
     min-height:40px;
     font-size:2em;
+    margin-bottom:5%;
 }
 
 #key{
@@ -92,10 +92,10 @@ label{
 
 #outputBox{
     border:5px solid #EC7171;
-    margin:10px 5%;
-    margin-bottom:10px;
+    margin: 15% 5%;
     background: rgba(255,255,255,0.5);
     text-align:center;
+    padding:2%;
 }
 
 #output{
