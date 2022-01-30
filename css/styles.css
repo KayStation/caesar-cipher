@@ -66,23 +66,40 @@ main{
 }
 
 #form{
-    display:flex;
-    flex-direction:column;
     margin:10px 5%;
     text-align:center;
 }
 
-
-#submit{
-    margin-left:30%;
-    margin-right:30%;
+label{
+    color:#EC7171;
+    font-size:3em;
 }
+
+
+#phrase{
+    width:60%;
+    min-height:40px;
+    font-size:2em;
+}
+
+#key{
+    width:10%;
+    min-height:40px;
+    font-size:2em;
+    text-align:center;
+}
+
 
 #outputBox{
     border:5px solid #EC7171;
     margin:10px 5%;
     margin-bottom:10px;
     background: rgba(255,255,255,0.5);
+    text-align:center;
+}
+
+#output{
+    font-size:1.25em;
 }
 
 
