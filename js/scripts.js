@@ -1,21 +1,6 @@
-const phrase = document.getElementById('phrase');
-const key = document.getElementById('key');
-const form = document.getElementById('form');
-
-form.addEventListener('submit', (e) => {
-    let mess
-})
 
 
-
-
-
-
-
-
-
-
-
+// Caesar Cipher Function ---------------------------------------------------
 
 const caesar = function(str, key) {
     const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -54,3 +39,14 @@ const caesar = function(str, key) {
 
     return newArray.join('');
 };
+// --------------------------------------------------------------------------------
+
+const phrase = document.getElementById("phrase");
+const key = document.getElementById("key");
+const output = document.getElementById("output");
+
+const updateOutput = function(){
+    output.textContent = caesar(phrase.value, key.value);
+}
+phrase.addEventListener("keyup", updateOutput);
+key.addEventListener("keyup", updateOutput);
