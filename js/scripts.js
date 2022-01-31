@@ -9,7 +9,11 @@ const caesar = function(str, key) {
     let strArray = Array.from(str);
 
     // If key is negative, fix it.
-    if(key < 0) { key = 26 + (key % 26);};
+    if(key < 0){
+        key = 26 + (key % 26);
+    } else if (key == 0){
+        key = 0
+    };
 
     // Allow this bad boy to be case sensitive.
     const isLowerCase = function(str){
