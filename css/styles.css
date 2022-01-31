@@ -20,7 +20,7 @@ main{
 }
 
 #title{
-    font-size:1em;
+    font-size:1.25em;
     color:white;
     display:grid;
     grid-template-columns:[line1] 15% [line2] 17.5% [line3] 17.5% [line4] 17.5% [line5] 17.5% [line6] 15% [line7];
@@ -31,6 +31,8 @@ main{
 
 #title h1{
     padding-left:2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
 }
 
 
@@ -72,6 +74,7 @@ main{
 label{
     color:#EC7171;
     font-size:3em;
+    font-weight:300;
 }
 
 
