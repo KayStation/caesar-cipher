@@ -50,7 +50,9 @@ const key = document.getElementById("key");
 const output = document.getElementById("output");
 
 const updateOutput = function(){
-    output.textContent = caesar(phrase.value, key.value);
+    newKey = Number(key.value);
+    output.textContent = caesar(phrase.value, newKey);
+    return;
 }
 phrase.addEventListener("keyup", updateOutput);
 key.addEventListener("keyup", updateOutput);
