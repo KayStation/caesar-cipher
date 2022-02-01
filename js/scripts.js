@@ -45,13 +45,17 @@ const caesar = function(str, key) {
 };
 // --------------------------------------------------------------------------------
 
+
 const phrase = document.getElementById("phrase");
 const key = document.getElementById("key");
 const output = document.getElementById("output");
 
 const updateOutput = function(){
     newKey = Number(key.value);
-    output.textContent = caesar(phrase.value, newKey);
+    output.textContent =
+        `${caesar(phrase.value, newKey)}
+        \r\n
+        Decryption Key is ${-(newKey)}.`;
     return;
 }
 phrase.addEventListener("keyup", updateOutput);
